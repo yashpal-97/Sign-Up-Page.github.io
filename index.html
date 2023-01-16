@@ -1,4 +1,4 @@
-<html>
+     <!-- <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -218,4 +218,219 @@ $("a.btn").click(function(e) {
 });
 
     </script> -->
+<!--</html>
+ -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="button.css">
+        <style>
+             *, *:before, *:after {
+   -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ } 
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #e6ebf0;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  /* background: #b6c6cc; */
+  background: linear-gradient(to bottom,#180340,#040a41);
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e4eded;
+  color: #071119;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 36px;
+  border-radius: 2px;
+}
+
+/* button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #0f1611;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+} */
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: large;
+  font-weight: 100;
+  margin-bottom: 6px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #0b0c0b;
+  color: rgb(237, 229, 229);
+  height:24px;
+  width: 24px;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+        </style>
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1> Hackathon Registration Form </h1>
+        
+        <fieldset>
+          
+          <!-- <legend><span class="number">1</span> Your Basic Info</legend> -->
+    
+          <label for="name" placeholder="Name"><span class="number">1</span><b> Name:</b></label>
+          <input type="text" id="name" name="user_name" placeholder="Name">
+        
+          <label for="tel"><span class="number">2</span><b>Contact No.(Whatsapp):</b></label>
+          <input type="tel" id="tel" name="Whatsapp" placeholder="0000000000">
+
+          <label for="job" ><span class="number">3</span><b>Branch:</b></label>
+          <select id="job" name="user_job" >
+            
+            <option value="" ><b>Branch</b></option>
+              <option value="Computer Science Engineering" >Computer Science and Engineering</option>
+              <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+              <option value="Electrical Engineering">Electrical Engineering</option>
+              <option value="Electronics and Instrumention Engineering">Electronics and Instrumention Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Production Engineering">Production Engineering</option>
+              <option value="Bio-Engineering">Bio-Engineering</option>
+
+          </select>
+
+          <label for="job"><span class="number">4</span><b>Year:</b></label>
+          <select id="job" name="user_job">
+            <option value="" >Year</option>
+              <option value="1st Year">1st Year</option>
+              <option value="2nd Year">2nd Year</option>
+              <option value="3rd Year">3rd Year</option>
+              <option value="4th Year">4th Year</option>
+            
+          </select>
+          <label for="name" placeholder="Enrollment Number"><span class="number">5</span><b> Enrollment Number:</b></label>
+          <input type="text" id="name" name="user_name" placeholder="Enrollment Number">
+        
+          <label for="name"><span class="number">6</span> <b>CodeChef Profile Link:</b></label>
+          <input type="text" id="name" name="user_name" placeholder="https://www.codechef.com/users/">
+      
+          <label for="name"><span class="number">6</span> <b>Codeforces Profile Link:</b></label>
+          <input type="text" id="name" name="user_name" placeholder="https://codeforces.com/profile/">
+        
+          
+         </fieldset>
+       
+        <div class="wrapper">
+          <button class="wave-btn">
+            <span class="wave-btn__text"><strong>Submit</strong></span>
+            <span class="wave-btn__waves"></span>
+            </a>
+        </div>
+       </form>
+        </div>
+      </div>
+      
+    </body>
+    <!-- <script>
+function alert() {
+	$(".alert").addClass("show");
+	setTimeout("$('.alert').removeClass('show');", 1000);
+}
+$("a.btn").click(function(e) {
+	e.preventDefault();
+	var btn = $(this);
+	btn.addClass("rumble");
+	setTimeout("$('a.btn').removeClass('rumble');", 300);
+	alert();
+});
+    </script> -->
 </html>
+
+
+
+
+
